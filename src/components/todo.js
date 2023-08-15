@@ -1,7 +1,7 @@
-import React from 'react';
-import {useDispatch } from 'react-redux';
+import React,{useState} from 'react';
+import { useDispatch } from 'react-redux';
 import { addTask } from '../actions/taskAction';
-const todoForm = () => {
+const TodoForm = () => {
   const [task, setTask] = useState('');
   const dispatch = useDispatch();
 
@@ -25,4 +25,4 @@ const todoForm = () => {
   );
 };
 
-export default todoForm;
+export default TodoForm;
