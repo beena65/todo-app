@@ -5,10 +5,12 @@ export const addTask = (task) => ({
   payload: task,
 });
 
-export const updateTask = () => ({
+export const updateTask = (taskId) => ({
   type: tc.UPDTAE_TASK,
+  payload: taskId,
 });
 
-export const deleteTask = () => ({
+export const deleteTask = (taskId) => ({
   type: tc.DELETE_TASK,
+  payload: taskId,
 });

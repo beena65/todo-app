@@ -1,38 +1,96 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Open+Sans&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+  background-color: aliceblue;
+}
+.completed {
+  text-decoration: line-through;
+}
+.form-container {
+  position: relative;
+  margin: 10px 5px;
+  padding-right: 22px;
+}
+.todo-wrapper {
+  background-color: #ffffff;
+  width: 400px;
+  height: 70dvh;
+  padding: 20px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+input[type='text'] {
+  padding: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  border: 1px solid #cccccc70;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 10px;
   text-align: center;
+  margin: 10px auto;
+  outline: none;
+  font-family: 'Open Sans';
+  color: #333;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type='text']:focus {
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* input[type='checkbox']:checked {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+} */
+/*  */
+input[type="checkbox"]:checked{
+  background-color: aqua;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.form-btn {
+  background-color: #53c6c6;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  top: 11px;
 }
-
-.App-link {
-  color: #61dafb;
+.todo-item {
+  background-color: #ffffff;
+  padding: 13px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed,
+.uncomplete {
+  color: #e0e0e0;
+  text-transform: capitalize;
+}
+.completed {
+  color: lightgrey;
+}
+.uncomplete {
+  font-size: 15px;
+  color: #222;
+}
+ul {
+  padding-left: unset;
+}
+.delete {
+  color: #c00;
+}
+.del-btn {
+  border: 1px solid rgb(254, 30, 30);
+  border-radius: 3px;
+  padding: 3px;
 }
